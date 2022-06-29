@@ -10,6 +10,6 @@ app.use(express.json());
 app.use('/uploads',express.static(path.join(__dirname , './uploads')))
 app.use(authRouter,userRouter,productRouter,orderRouter,cartRouter,stripeRouter);
 connectDB();
-app.listen(+process.env.PORT,()=>{
+app.listen(+process.env.PORT || 8051,()=>{
     console.log(`run on port ${process.env.PORT}`);
 })

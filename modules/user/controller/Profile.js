@@ -1,7 +1,7 @@
 const { StatusCodes } = require('http-status-codes');
 const fs = require("fs");
 const path = require("path");
-const { userModel } = require("../../../models/userModel");
+const { userModel } = require("../../../models/UserModel");
 
 const getAllUser = async (req, res) => {
     console.log("first");

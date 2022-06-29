@@ -1,8 +1,8 @@
 const { getAllCart, getCart, updateCart, deleteCart, createCart, getCartUser } = require('./controller/Profile');
 const { auth } = require('../../middlewares/auth');
 const { validation } = require('../../middlewares/validation');
-const { endPoint } = require('./Cart.endPoint');
-const { updateValidation } = require('./Cart.validation');
+const { endPoint } = require('./cart.endPoint');
+const { updateValidation } = require('./cart.validation');
 const { myMulter } = require('../../services/multer');
 const router = require('express').Router();
 

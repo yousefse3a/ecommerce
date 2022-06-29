@@ -1,6 +1,8 @@
 const { getAllOrder, getOrder, createOrder, updateOrder, deleteOrder, stateOrder } = require('./controller/Profile');
 const { auth } = require('../../middlewares/auth');
+const { validation } = require('../../middlewares/validation');
 const { endPoint } = require('./order.endPoint');
+const { updateValidation, createValidation } = require('./order.validation');
 const router = require('express').Router();
 
 

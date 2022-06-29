@@ -1,5 +1,5 @@
 const { StatusCodes } = require("http-status-codes");
-const { userModel } = require("../../../models/UserModel");
+const { userModel } = require("../../../models/userModel");
 const jwt = require("jsonwebtoken");
 
 const signup = async (req, res) => {

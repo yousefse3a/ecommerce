@@ -77,7 +77,7 @@ const createProduct = async (req, res) => {
         if (req.file) {
             if (!req.fileError) {
                 const img = `${req.fileDest}/${req.file.filename}`;
-                const newProduct = new ProductModel({ title, desc, categories , size,img, price,color});
+                const newProduct = new ProductModel({ title, desc, categories:[...categories.split(",")] , size:[...size.split(",")],img, price,color:[...color.split(",")]});
                 const savedProduct = await newProduct.save();
                 res.status(StatusCodes.CREATED).json({ message: "product added", savedProduct });
             } else {

@@ -4,7 +4,7 @@ const { nanoid } = require('nanoid');
 const fs = require("fs");
 
 const validateFileMthod = {
-    image: ['image/jpg', 'image/jpeg', 'image/png'],
+    image: ['image/jpg', 'image/jpeg', 'image/png','image/webp'],
     textFile: ['application/pdf'],
 
 }

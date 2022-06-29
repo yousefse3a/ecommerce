@@ -1,5 +1,5 @@
 const { StatusCodes } = require("http-status-codes");
-const { userModel } = require("../../../models/userModel");
+const { userModel } = require("../../../models/UserModel");
 const bycrpt = require('bcrypt');
 const jwt = require("jsonwebtoken");
 

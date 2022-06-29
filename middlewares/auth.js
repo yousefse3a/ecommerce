@@ -1,6 +1,6 @@
 const { StatusCodes } = require('http-status-codes');
 const jwt = require('jsonwebtoken');
-const { userModel } = require("../models/userModel");
+const { userModel } = require("../models/UserModel");
 
 const Roles = {
     user: 'user',

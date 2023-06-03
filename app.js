@@ -12,4 +12,5 @@ app.use(authRouter, userRouter, productRouter, orderRouter, cartRouter, stripeRo
 connectDB();
 app.listen(+process.env.PORT || 4000, () => {
     console.log(`run on port ${process.env.PORT}`);
+    console.log('new commit');
 })
